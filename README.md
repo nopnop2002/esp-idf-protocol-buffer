@@ -39,7 +39,7 @@ I (348) MAIN: deserialize: b=2
 sudo apt install protobuf-c-compiler libprotobuf-c-dev
 ```
 
-### Make define file
+### Make message define file
 ```
 $ cat amessage.proto
 syntax = "proto2";
@@ -50,7 +50,7 @@ message AMessage {
 }
 ```
 
-### Compile define file
+### Compile message define file
 protoc-c generates header files and source code.   
 ```
 $ protoc-c --c_out=. amessage.proto
