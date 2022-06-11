@@ -19,6 +19,19 @@ cd esp-idf-protocol-buffer
 idf.py flash monitor
 ```
 
+- Serialize
+```
+I (328) MAIN: Writing 4 serialized bytes
+I (338) MAIN: 0x3ffaff78   08 0a 10 02                                       |....|
+```
+- DeSerialize
+```
+I (338) MAIN: deserialize: a=10
+I (348) MAIN: deserialize: b=2
+```
+
+
+
 # How to use Protocol Buffers
 
 ### Install protobuf-c-compiler and c-library in ubuntu
