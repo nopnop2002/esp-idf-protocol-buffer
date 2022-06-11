@@ -59,7 +59,7 @@ $ ls amessage.*
 amessage.pb-c.c  amessage.pb-c.h  amessage.proto
 ```
 
-### Copy header files and source code in your project
+### Copy header files and source code to your project
 ```
 $ cp amessage.pb-c.* /your_project/main/
 ```
