@@ -3,7 +3,7 @@ Example of Google Protocol Buffers Serialize and Deserialize with ESP-IDF.
 
 In MQTT for IoT devices, JSON is used as the serialization format of the message.   
 However, for low-performance hardware, JSON parsing in C is a heavy load.   
-So, when I was looking for something good with a serialized format that could be implemented in C, I found something called protobuf-c.   
+So when I was looking for a good serialized format that could be implemented in C, I found protobuf.
 
 ESP-IDF includes [this](https://developers.google.com/protocol-buffers/) Google Protocol Buffers library.   
 You can use Protocol Buffers components as standard.   
