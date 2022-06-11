@@ -64,3 +64,12 @@ amessage.pb-c.c  amessage.pb-c.h  amessage.proto
 $ cp amessage.pb-c.* /your_project/main/
 ```
 
+### Include header files to your source
+```
+#include "amessage.pb-c.h"
+```
+
+### Add source file to your CMakeLists.txt
+```
+set(component_srcs main.c amessage.pb-c.c)
+``
