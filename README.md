@@ -72,4 +72,4 @@ $ cp amessage.pb-c.* /your_project/main/
 ### Add source file to your CMakeLists.txt
 ```
 set(component_srcs main.c amessage.pb-c.c)
-``
+```
