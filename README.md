@@ -36,7 +36,10 @@ I (348) MAIN: deserialize: b=2
 
 ### Install protobuf-c-compiler and c-library in ubuntu
 ```
-sudo apt install protobuf-c-compiler libprotobuf-c-dev
+$ sudo apt install protobuf-c-compiler libprotobuf-c-dev
+$ protoc-c --version
+protobuf-c 1.3.3
+libprotoc 3.6.1
 ```
 
 ### Make message define file
