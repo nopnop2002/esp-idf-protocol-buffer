@@ -11,6 +11,8 @@ But there is no example code in ESP-IDF.
 
 I ported from [this](https://github.com/protobuf-c/protobuf-c/wiki/Examples).
 
+# Software requirements
+esp-idf v4.4/v5.0.   
 
 # Installation
 ```

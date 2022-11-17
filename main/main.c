@@ -4,6 +4,7 @@
  */
 
 #include <stdio.h>
+#include <inttypes.h>
 #include <stdlib.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -36,9 +37,9 @@ void app_main()
 	}
 
 	// display the message's fields.
-	ESP_LOGI(TAG, "deserialize: a=%d",msg2->a);  // required field
+	ESP_LOGI(TAG, "deserialize: a=%"PRIi32, msg2->a);  // required field
  	if (msg2->has_b) // handle optional field
-    	ESP_LOGI(TAG, "deserialize: b=%d",msg2->b);
+    	ESP_LOGI(TAG, "deserialize: b=%"PRIi32, msg2->b);
 
 	// Free the allocated serialized buffer
 	free(buf);
