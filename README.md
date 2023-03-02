@@ -11,6 +11,7 @@ But there is no example code in ESP-IDF.
 
 I ported from [this](https://github.com/protobuf-c/protobuf-c/wiki/Examples).
 
+
 # Software requirements
 esp-idf v4.4/v5.0.   
 
@@ -77,4 +78,17 @@ $ cp amessage.pb-c.* /your_project/main/
 ### Add source file to your CMakeLists.txt
 ```
 set(component_srcs main.c amessage.pb-c.c)
+```
+
+
+
+# About proto3 description format   
+___proto3 is not supported.___   
+An error occurs while building the firmware.
+```
+../main/main.c:23:12: error: 'AMessage' {aka 'struct _AMessage'} has no member named 'has_b'
+   23 |         msg.has_b = 1;
+      |            ^
+../main/main.c:41:17: error: 'AMessage' {aka 'struct _AMessage'} has no member named 'has_b'
+   41 |         if (msg2->has_b) // handle optional field
 ```
