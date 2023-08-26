@@ -13,7 +13,7 @@ I ported from [this](https://github.com/protobuf-c/protobuf-c/wiki/Examples).
 
 
 # Software requirements
-esp-idf v4.4/v5.0.   
+esp-idf v4.4/v5.x.   
 
 # Installation
 ```
